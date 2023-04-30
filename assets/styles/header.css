@@ -1,0 +1,146 @@
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: rgb(138, 0, 188);
+}
+
+.logo {
+    border-radius: 90px;
+    height: 150px;
+    position: relative;
+    bottom: 6%;
+}
+
+/* .dotInnerContainer {
+    height: 20px;
+    width: 20px;
+    background-color: #ffeb3b;
+    border-radius: 43%;
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    top: 15px;
+    right: 74px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(-10px)
+    }
+}
+
+.dotContent {
+    position: absolute;
+    right: 7px;
+    display: flex;
+    justify-content: center;
+    color: brown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.dotContent:hover {
+    cursor: pointer;
+    animation-name: bounce;
+} */
+
+/*  */
+
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 8px #00831c, inset 0 0 8px #008f13; }
+    50% { box-shadow:0 0 16px #007e3d, inset 0 0 14px #029442; }
+    100% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+  }
+  
+  .dotInnerContainer {
+    border-radius: 43%;
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    top: 15px;
+    right: 74px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    background-color:transparent;
+    width: 32px;;
+    height: 32px;;
+    border-radius:50px;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 10px #ea4c89;
+    -webkit-animation: pulse 2s linear 1s infinite;
+  }
+
+  .dotInnerContainer span {
+    line-height: 100px;
+    font-family:sans-serif;
+    font-weight:100;
+    font-size:20px;
+    color: #04e92a;
+    text-shadow: 0 0 4px #ea4c89;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(-12px)
+    }
+
+}
+
+  .dotInnerContainer:hover {
+    cursor: pointer;
+    animation-name: bounce;
+} 
+
+.sackMedidate{
+    position: absolute;
+    z-index: 2;
+    height: 78px;
+    right: 37px;
+    top: -6px;
+}
+
+/* .dotContent {
+    color: red;
+    font-size: 26px;
+} */
+
+
+
+

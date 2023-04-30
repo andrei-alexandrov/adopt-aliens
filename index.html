@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/login.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/adopted.css">
+    <link rel="stylesheet" href="./assets/styles/register.css">
+    <link rel="stylesheet" href="./assets/styles/donated.css">
+    <title>Login form</title>
+</head>
+<!-- -------------------------------------------------------------------- -->
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#adopted">Adopted</a>
+                <div id="dot">
+                    <div class="dotInnerContainer">
+                        <span>0</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- -------------------------------------------------------------------- -->
+    <section class="page" id="login">
+        <img class="logo" src="./assets/pics/Logo.jpg" alt="Logo">
+        <div class="loginBox">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input name="username" id="userNameInput" type="username" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name="pass" id="passInput" type="password" required>
+                    <label>Password</label>
+                </div>
+                <button id="loginButtonClick" type="submit">Login</button>
+                <span id="loginError"></span>
+                <div class="registerLink">
+                    <p>Don't have an account? <a class="registerRedirect" href="#register"><span
+                                id="registerHover">Register</span></a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------- -->
+    <section class="page" id="register">
+        <img class="logo" src="./assets/pics/Logo.jpg" alt="Logo">
+        <div class="loginBox">
+            <form id="registerForm">
+                <h2 id="registerTitle">Register alien account</h2>
+                <div class="wrapper">
+                    <div id="registerMessage" style="display:none;"></div>
+                </div>
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input id="username" type="username" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="pass" type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="inputBox">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="confirmPass" type="password" required>
+                    <label>Confirm password</label>
+                </div>
+
+                <button id="registerButton" type="submit">Register</button>
+                <span id="registerError"></span>
+                <div class="registerLink">
+                    <p>Already have an account? <a class="registerRedirect" href="#login"><span id="registerHover">Log
+                                in</span></a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- -------------------------------------------------------------------- -->
+    <div class="page" id="home">
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="./assets/pics/112333211 (1) (1).mp4" type="video/mp4">
+        </video>
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search by name only">
+            <select name="animals" id="animalsFilter">
+                <option value="">All</option>
+            </select>
+        </div>
+
+        <div class="container"></div>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+    <div class="page" id="adopted">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------- -->
+    <section class="pageDonated" id="donated">
+        <p id="donationMessage"></p>
+        <form id="donationForm">
+            <input required type="text" name="name" id="donatorName" placeholder="Your name">
+            <input required type="number" name="amount" id="donationAmount" placeholder="Sum">
+            <button type="submit" id="donateSumButton">Donate</button>
+        </form>
+
+        <table id="donationsHistory">
+            <h1 id="historyDescription">Donations history</h1>
+            <tr>
+                <th>Date</th>
+                <th id="">Alien animal name</th>
+                <th id="">Donated sum</th>
+            </tr>
+            <div class="container">
+                <!-- Допиши в js -->
+            </div>
+        </table>
+        <!-- <div class="container">
+
+        </div> -->
+    </section>
+    <!-- -------------------------------------------------------------------- -->
+    <footer>
+        <div>Created by Andrei Alexandrov 2023</div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./data.js"></script>
+    <script src="./assets/utils/helper.js"></script>
+    <script src="./js/model/AnimalManager.js"></script>
+    <script src="./js/model/UserManager.js"></script>
+    <script src="./js/controler/ViewController.js"></script>
+</body>
+
+</html>

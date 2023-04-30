@@ -1,0 +1,17 @@
+#registerError {
+    color: rgb(255, 56, 56);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#registerTitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
